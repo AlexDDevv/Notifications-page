@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;800&display=swap');
+
+$name: hsl(224, 21%, 14%);
+$light1: hsl(211, 68%, 94%);
+$light2: hsl(205, 33%, 90%);
+$gray: hsl(219, 14%, 63%);
+$dark: hsl(219, 12%, 42%);
+$blue: hsl(219, 85%, 26%);
+$red: hsl(1, 90%, 64%);
+
+@mixin bold {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-weight: 800;
+}
+@mixin medium {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-weight: 500;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.contents>* {
+    display: inline;
+}
+body {
+    background: hsl(210, 60%, 98%);
+}
+h2 {
+    @include bold;
+    font-size: 1rem;
+    color: $name;
+    margin-right: 2px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+h2:hover {
+    color: $blue
+}
+h3 {
+    @include bold;
+    font-size: 0.9rem;
+    color: $dark;
+    margin-right: 2px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+h3:hover {
+    color: $blue;
+}
+
+
+
